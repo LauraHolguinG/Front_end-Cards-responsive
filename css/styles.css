@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.dto{
+    background-color: #1CD1B0;
+    padding: 2px 30px;
+    font-size: 1rem;
+}
+header h1{
+    background-color: #00669f;
+    padding: 20px 30px;
+    color: white;
+    font-size: 1.5rem;
+}
+footer {
+    background-color: #00669F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    color: white;
+}
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+}
+footer img{
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 100px 10px 100px 20px;
+    position: relative;
+    background-color: #E5E5E5;
+    border-radius: 16px 16px 0 0;
+}
+section article .mujer_maravilla{
+    height: 194px;
+    width: 300px;
+    background-image: url(../img/fondo_mujermilla.png);
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+section article .superman{
+    height: 194px;
+    width: 300px;
+    background-image: url(../img/fondosuper.png);
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+section article .harleyQ{
+    height: 194px;
+    width: 300px;
+    background-image: url(../img/fondo_harley.png);
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+section article .batman{
+    height: 194px;
+    width: 300px;
+    background-image: url(../img/fondoB.png);
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.circleimg{
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+}
+section article h2{
+    font-size: 1.5rem;
+    margin: 70px 20px 20px;
+    text-transform: uppercase;
+}
+section article p{
+    padding: 20px;
+}
+button{
+    background-color: #00669f;
+    border: none;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 30px;
+}
+.fa-heart{
+    color: red;
+    padding: 5% ;
+}
+.fa-circle-plus{
+    position: fixed;
+    top: 400px;
+    left: 1200px;
+    font-size: 3rem;
+    color: #00669f;
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 940px){
+    .dto{
+        background-color: #D1891C;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+/* mobile */
+@media only screen and (min-width: 400px) and (max-width: 767px){
+    section article{
+        flex-direction: column;
+        margin: 47px;
+    }
+    .dto{
+        background-color: #D1891C;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
